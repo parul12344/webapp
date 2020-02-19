@@ -1,0 +1,52 @@
+[
+{
+	"id":1,
+	"name":"Delhi",
+	"city_id":"1273294"
+},
+{
+	"id":2,
+	"name":"Mumbai",
+	"city_id":"1275339"
+},
+{
+	"id":3,
+	"name":"Kolkata",
+	"city_id":"1275004"
+},
+{
+	"id":4,
+	"name":"Banglore",
+	"city_id":"1277333"
+},
+{
+	"id":5,
+	"name":"Pune",
+	"city_id":"1259229"
+},
+{
+	"id":6,
+	"name":"Hyderabad",
+	"city_id":"1269843"
+},
+{
+	"id":7,
+	"name":"Chennai",
+	"city_id":"1264527"
+},
+{
+	"id":8,
+	"name":"Surat",
+	"city_id":"1255364"
+},
+{
+	"id":9,
+	"name":"Visakhapatnam",
+	"city_id":"1253102"
+},
+{
+	"id":10,
+	"name":"Kanpur",
+	"city_id":"1267995"
+}
+]

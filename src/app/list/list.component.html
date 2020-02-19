@@ -1,0 +1,36 @@
+<!-- Header -->
+<header class="container-fluid text-center">
+  <p>List Metropolian Cities</p>
+</header>
+<!-- Header -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">SNO</th>
+      <th scope="col">City</th>
+      <th scope="col">Max Temp (<span>&#8451;</span>)</th>
+      <th scope="col">Min Temp (<span>&#8451;</span>)</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let l of resultArr; index as i'>
+      <td>{{i+1}}</td>
+      <td>{{l.name}}</td>
+      <td>{{l['main'].temp_max}}</td>
+      <td>{{l['main'].temp_min}}</td>
+      <td (click)="getCityDetailData(l.id)"><button type="button" class="btn btn-primary">View</button></td>
+    </tr>
+
+  </tbody>
+</table>
+<div *ngIf='flag'>
+  <ng-container *ngIf="resultArr.length == 0">
+    <p>No Record Found</p>
+  </ng-container>
+</div>
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <p>Footer</p>
+</footer>
+<!-- Footer -->

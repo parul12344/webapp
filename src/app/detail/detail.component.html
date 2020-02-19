@@ -1,0 +1,39 @@
+<!-- Header -->
+<a href="/list">Back to List</a>
+<header class="container-fluid text-center">
+  <p>Details(16 days weather forecast)</p>
+</header>
+<!-- Header -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Max Temp (<span>&#8451;</span>)</th>
+      <th scope="col">Min Temp (<span>&#8451;</span>)</th>
+      <th scope="col">Weather</th>
+      <th scope="col">Humidity</th>
+      <th scope="col">Pressure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let r of result'>
+      <td>{{r.dt|date:'yyyy-MM-dd HH:mm:ss Z'}}</td>
+      <td>{{r['main'].temp_max}}</td>
+      <td>{{r['main'].temp_min}}</td>
+      <td>{{r['weather'][0].description|uppercase}}</td>
+      <td>{{r['main'].humidity}}</td>
+      <td>{{r['main'].pressure}}</td>
+    </tr>
+  
+  </tbody>
+</table>
+<div *ngIf="flag">
+<ng-container *ngIf="result.length == 0">
+    <p>No Record Found</p>
+</ng-container>
+</div>
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <p>Footer</p>
+</footer>
+<!-- Footer -->
